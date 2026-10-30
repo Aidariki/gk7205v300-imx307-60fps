@@ -1,0 +1,28 @@
+system:
+  hostname: openipc-gk7205v300
+  webServer: true
+
+video0:
+  enabled: true
+  codec: h264
+  size: 1920x1080
+  fps: 60
+  bitrate: 4096
+  rcMode: cbr
+  gopSize: 2.0
+
+video1:
+  enabled: true
+  codec: h264
+  size: 640x360
+  fps: 60
+  bitrate: 1024
+
+isp:
+  lowDelay: true
+  sensorConfig: /etc/sensors/imx307.ini
+  exposure:
+    max: 16666
+
+audio:
+  enabled: false
